@@ -1,0 +1,280 @@
+/* Loại bỏ margin cho thẻ body và điều chỉnh font chữ mặc định */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Định dạng link */
+a {
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+/* Menu chính */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Logo */
+.navbar-brand {
+    float: left;
+    width: 30px;
+    margin: 10px 10px 5px 10px;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+/* Các link trên menu chính */
+.navbar a.nav-link {
+    float: left;
+    font-size: 16px;
+    color: #d3d3d3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a.nav-link.active {
+    color: white;
+}
+
+/* Menu con */
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+/* Nút mở ra menu con */
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #d3d3d3;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Màu nền khi hover trên menu chính */
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+    background-color: #198754;
+}
+
+/* Đặt menu con ngay dưới menu chính */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #198754;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Các link trên menu con */
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+/* Màu nền khi hover trên menu con */
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+/* Mở menu con khi hover nút trên menu chính */
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+/* Class container có padding 2 bên */
+.container {
+    padding: 0 200px;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+}
+
+/* Menu trái */
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin: 15px 0;
+}
+
+/*  Cài đặt 1 ô sản phẩm */
+.card img {
+    width: 100%;
+}
+
+.card-content h3 {
+    font-weight: 600;
+}
+
+.card-content p {
+    color: #dc3545;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    padding: 30px 150px;
+}
+
+.footer a {
+    color: white;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+/* Cài đặt responsive cho desktop */
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0 15px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* Cài đặt responsive cho máy tính bảng */
+@media only screen and (max-width: 992px) {
+    .col-t-1 {
+        width: 8.33%;
+    }
+
+    .col-t-2 {
+        width: 16.66%;
+    }
+
+    .col-t-3 {
+        width: 25%;
+    }
+
+    .col-t-4 {
+        width: 33.33%;
+    }
+
+    .col-t-5 {
+        width: 41.66%;
+    }
+
+    .col-t-6 {
+        width: 50%;
+    }
+
+    .col-t-7 {
+        width: 58.33%;
+    }
+
+    .col-t-8 {
+        width: 66.66%;
+    }
+
+    .col-t-9 {
+        width: 75%;
+    }
+
+    .col-t-10 {
+        width: 83.33%;
+    }
+
+    .col-t-11 {
+        width: 91.66%;
+    }
+
+    .col-t-12 {
+        width: 100%;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 0;
+    }
+}
+
+/* Cài đặt responsive cho điện thoại */
+@media only screen and (max-width: 576px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 0;
+    }
+}
